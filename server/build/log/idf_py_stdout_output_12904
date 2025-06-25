@@ -1,0 +1,342 @@
+ets Ju�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 25 2025 11:59:08[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=19df8h (105976) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=00029e20 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=00029e44 vaddr=3ffb0000 size=03f00h ( 16128) load[0m
+[0;32mI (136) esp_image: segment 3: paddr=0002dd4c vaddr=40080000 size=022cch (  8908) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=866f4h (550644) map[0m
+[0;32mI (333) esp_image: segment 5: paddr=000b671c vaddr=400822cc size=154cch ( 87244) load[0m
+[0;32mI (378) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (379) boot: Disabling RNG early entropy source...[0m
+[0;32mI (389) cpu_start: Multicore app[0m
+[0;32mI (397) cpu_start: Pro cpu start user code[0m
+[0;32mI (397) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (397) app_init: Application information:[0m
+[0;32mI (398) app_init: Project name:     server[0m
+[0;32mI (401) app_init: App version:      1[0m
+[0;32mI (405) app_init: Compile time:     Jun 25 2025 11:58:48[0m
+[0;32mI (410) app_init: ELF file SHA256:  b286e761d...[0m
+[0;32mI (414) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (418) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (422) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (426) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (430) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (436) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (441) heap_init: At 3FFB81C0 len 00027E40 (159 KiB): DRAM[0m
+[0;32mI (446) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (452) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (457) heap_init: At 40097798 len 00008868 (34 KiB): IRAM[0m
+[0;32mI (464) spi_flash: detected chip: generic[0m
+[0;32mI (466) spi_flash: flash io: dio[0m
+[0;33mW (469) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (482) main_task: Started on CPU0[0m
+[0;32mI (492) main_task: Calling app_main()[0m
+[0;32mI (522) example_connect: Start example_connect.[0m
+[0;32mI (532) wifi:wifi driver task: 3ffbfe2c, prio:23, stack:6656, core=0[0m
+[0;32mI (542) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (542) wifi:wifi certification version: v7.0[0m
+[0;32mI (542) wifi:config NVS flash: enabled[0m
+[0;32mI (542) wifi:config nano formatting: disabled[0m
+[0;32mI (552) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (552) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (562) wifi:Init management short buffer num: 32[0m
+[0;32mI (562) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (572) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (572) wifi:Init static rx buffer num: 10[0m
+[0;32mI (572) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (582) wifi_init: rx ba win: 6[0m
+[0;32mI (582) wifi_init: accept mbox: 6[0m
+[0;32mI (582) wifi_init: tcpip mbox: 32[0m
+[0;32mI (592) wifi_init: udp mbox: 6[0m
+[0;32mI (592) wifi_init: tcp mbox: 6[0m
+[0;32mI (592) wifi_init: tcp tx win: 5760[0m
+[0;32mI (592) wifi_init: tcp rx win: 5760[0m
+[0;32mI (602) wifi_init: tcp mss: 1440[0m
+[0;32mI (602) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (602) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (612) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (692) wifi:mode : sta (10:06:1c:f2:32:78)[0m
+[0;32mI (692) wifi:enable tsf[0m
+[0;32mI (692) example_connect: Connecting to The Watling Boys...[0m
+[0;33mW (692) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (702) example_connect: Waiting for IP(s)[0m
+[0;32mI (3362) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3362) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3372) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3382) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3402) wifi:connected with The Watling Boys, aid = 1, channel 11, BW20, bssid = a2:b8:2b:68:39:23[0m
+[0;32mI (3402) wifi:security: WPA2-PSK, phy: bgn, rssi: -50[0m
+[0;32mI (3402) wifi:pm start, type: 1[0m
+
+[0;32mI (3402) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3432) wifi:<ba-add>idx:0 (ifx:0, a2:b8:2b:68:39:23), tid:0, ssn:0, winSize:64[0m
+[0;32mI (3492) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3492) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4452) esp_netif_handlers: example_netif_sta ip: 192.168.2.124, mask: 255.255.255.0, gw: 192.168.2.1[0m
+[0;32mI (4452) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.2.124[0m
+[0;32mI (4522) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:1206:1cff:fef2:3278, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4522) example_common: Connected to example_netif_sta[0m
+[0;32mI (4532) example_common: - IPv4 address: 192.168.2.124,[0m
+[0;32mI (4532) example_common: - IPv6 address: fe80:0000:0000:0000:1206:1cff:fef2:3278, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4542) example: Socket created[0m
+[0;32mI (4542) example: Socket bound, port 7777[0m
+[0;32mI (4552) example: Socket listening[0m
+[0;32mI (4552) main_task: Returned from app_main()[0m
+[0;32mI (96172) example: Socket accepted ip address: 192.168.2.214[0m
+[0;32mI (96672) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (97172) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (97672) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (98172) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (98672) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (99172) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (99672) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (100172) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (100672) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (101172) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (101672) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (102172) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (102672) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (103172) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (103672) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (104172) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (104672) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (105172) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (105672) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (106172) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (106672) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (108552) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (109062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (109562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (110062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (110562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (111062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (111562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (112062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (112562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (113062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (113562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (114062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (114562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (115062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (115562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (116062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (116562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (117062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (117562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (118062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (118562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (119062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (119562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (120062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (120562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (121062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (121562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (122062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (122562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (123062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (123562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (124062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (124562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (125062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (125562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (126062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (126562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (127062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (127562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (128062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (128562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (129062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (129562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (130062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (130562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (131062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (131562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (132062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (132562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (133062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (133562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (134062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (134562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (135062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (135562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (136062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (136562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (137062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (137562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (138062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (138562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (139062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (139562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (140062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (140562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (141062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (141562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (142062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (142562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (143062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (143562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (144062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (144562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (145062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (145562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (146062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (146562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (147062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (147562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (148062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (148562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (149062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (149562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (150062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (150562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (151062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (151562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (152062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (152562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (153062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (153562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (154062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (154562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (155062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (155562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (156062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (156562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (157062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (157562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (158062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (158562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (159062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (159562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (160062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (160562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (161062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (161562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (162062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (162562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (163062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (163562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (164062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (164562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (165062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (165562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (166062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (166562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (167062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (167562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (168062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (168562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (169062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (169562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (170062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (170562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (171062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (171562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (172062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (172562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (173062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (173562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (174062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (174562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (175062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (175562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (176062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (176562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (177062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (177562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (178062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (178562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (179062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (179562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (180062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (180562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (181062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (181562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (182062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (182562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (183062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (183562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (184062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (184562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (185062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (185562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (186062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (186562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (187062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (187562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (188062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (188562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (189062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (189562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (190062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (190562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (191062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (191562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (192062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (192562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (193062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (193562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (194062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (194562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (195062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (195562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (196062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (196562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (197062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (197562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (198062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (198562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (199062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (199562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (200062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (200562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (201062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (201562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (202062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (202562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (203062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (203562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (204062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (204562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (205062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (205562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (206062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (206562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (207062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (207562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (208062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (208562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (209062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (209562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (210062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (210562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (211062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (211562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (212062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (212562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (213062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (213562) example: Received 25 bytes: Message from ESP32 Vamsi [0m
+[0;32mI (214062) example: Received 25 bytes: Message from ESP32 Vamsi [0m
